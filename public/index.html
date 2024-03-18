@@ -13,19 +13,17 @@
         <h1>¿Puedes adivinar el número?</h1>
         <p>Introduce un número entre 1 y 100:</p>
         <input type="number" id="numeroEntrada" placeholder="Ingresa un número ">
-        <button  onclick="chequearResultado()">Comprobar</button>
+        <button id="checkButton">Comprobar</button> <!-- Removido el atributo onclick -->
         <p id="mensaje">Vamos a Jugar!</p>
         <div id="mensajeContainer">
             <p id="mensaje"></p>
-            <button id="resetButton" onclick="reiniciarJuego()">Reiniciar Juego</button>
+            <button id="resetButton">Reiniciar Juego</button> <!-- Removido el atributo onclick -->
         </div>
         <h4> Intentos: <p id="intento">0</p>
         </h4>
 
-
-        
-        
-    <script  src="./script.js"></script>
+        <script type="module" src="./script.js"></script>
+        <!-- <script type="module" src="/firebase_config.js"></script> -->
 </body>
 
 </html>
